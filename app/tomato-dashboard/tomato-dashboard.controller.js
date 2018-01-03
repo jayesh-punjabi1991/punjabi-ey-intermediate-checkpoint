@@ -28,9 +28,10 @@
             ]).then(activateComplete);
 
             function activateComplete(results) {
+                var myData = [];
                 vm.tomatoes = results[0];
                 vm.farms = results[1];
-                vm.loading = false;
+                vm.loading = false;                
             }
         }
 
@@ -40,8 +41,16 @@
 
         function getTomatoes() {
             return restService.getTomatoes().then(function(tomatoes) {
-                return tomatoes;
+                return tomatoes;                
             });
+
+        }
+
+        function getGridData() {
+            return restService.getTomatoes().then(function(gridData) {
+                return gridData;                
+            });
+
         }
 
         function getFarms() {

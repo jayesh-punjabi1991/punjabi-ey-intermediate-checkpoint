@@ -25,6 +25,15 @@
  
     function TomatoGridController(tomatoGridService) {
         var vm = this;
+        vm.loading = true;
+        vm.tableHeader = [
+            { title: 'Color', val: 'color'},
+            { title: 'Cost', val: 'cost' },
+            { title: 'Ounces', val: 'ounces' },
+            { title: 'Picked?', val: 'picked' },
+            { title: 'Season', val: 'season'}
+        ];
+        vm.gridData = tomatoGridService.filterDataByFarm(vm.data, vm.listView);
+        vm.loading = false;
     }
  })();
- 

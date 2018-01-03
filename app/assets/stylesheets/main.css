@@ -60,14 +60,26 @@ body {
 	font-size: 16px;
 }
 
+.navbar-brand {
+	float: none;
+	padding-left: 25px !important;
+	line-height:40px !important;
+}
+
+.navbar-header{
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+}
+
 h1 {
 	font-size: 1.2em;
 }
 
 .nav__logo {
 	width: 30px;
-	margin: -5px 0 5px 0;
-	vertical-align: 20px;
+	margin: 5px 0 5px 0;
+	vertical-align: middle;
+	float:left;
 }
 
 .tomato-chart {
@@ -84,6 +96,7 @@ h1 {
 .tomato-navigation__title {
 	font-weight: bold;
 }
+
 
 /*************************************** 
  * Tomato Card 
@@ -156,7 +169,7 @@ h1 {
 	-webkit-animation-delay: -1.0s;
 	animation-delay: -1.0s;
 }
-  
+
 @-webkit-keyframes sk-bounce {
 	0%, 100% { -webkit-transform: scale(0.0) }
 	50% { -webkit-transform: scale(1.0) }
@@ -171,3 +184,4 @@ h1 {
 		-webkit-transform: scale(1.0);
 	}
 }
+

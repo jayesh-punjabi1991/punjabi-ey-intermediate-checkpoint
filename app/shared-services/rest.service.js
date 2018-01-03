@@ -25,7 +25,12 @@
         }
 
         function getFarms() {
-            // Get farms from API here
+            return $http({
+                method: 'GET', 
+                url: 'http://localhost:3000/farms'
+            }).then(function(response) {
+                return response.data;
+            });
         }
     }
 })();
