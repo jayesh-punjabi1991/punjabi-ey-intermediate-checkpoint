@@ -2,15 +2,15 @@
 <div ng-if="vm.loading">
     Loading...
 </div>
-<div ng-if="!vm.loading">
+<div ng-if="!vm.loading" style="padding:20px">
         <table>
             <tr>                                    
                 <td class="searchLabel"><b> Search: </b></td>
                 <td class="searchBox"> <input class="form-control" type="text" ng-model="q"> </td> 
             </tr>
         </table>
-    <table class="table table-condensed table-hover" id="tblData">
-        <thead class="thead-light">
+    <table class="table table-condensed table-hover" id="tblData" style="margin-top:1%">
+        <thead class="thead-light" style="background-color:lightgrey">
             <th ng-repeat="header in vm.tableHeader">
                 {{header.title}}
             </th>

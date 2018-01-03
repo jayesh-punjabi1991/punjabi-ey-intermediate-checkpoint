@@ -132,6 +132,22 @@ h1 {
 	margin-right: auto;
 }
 
+body > div > div > ul > tomato-grid > div > table:nth-child(1){
+	margin-top:3%;
+}
+
+.nav-tabs{
+	padding: 15px !important;
+}
+
+.nav-tabs > li{
+	font-size: 1.15rem;
+}
+
+.pagination{
+	float:right;
+}
+
 /*************************************** 
  * Tomato Loading Indicator
  **************************************/
@@ -184,4 +200,3 @@ h1 {
 		-webkit-transform: scale(1.0);
 	}
 }
-

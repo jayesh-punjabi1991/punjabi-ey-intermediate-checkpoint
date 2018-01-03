@@ -34,7 +34,7 @@
 </section>
 
 <!--Tomato Grid-->
-<uib-tabset active="vm.activeTab">
+<uib-tabset>
     <uib-tab index="$index" ng-repeat="gridData in vm.farms track by $index" heading="{{gridData.Title}}" select="vm.setActiveTabIndex($index)" />
     <tomato-grid
         ng-if="vm.activeTabIndex === $index"
